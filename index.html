@@ -10,6 +10,20 @@
 </head>
 <body>
 
+  <!-- Навигация -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <div class="logo">Демонтаж-Профи</div>
+      <ul class="nav-links">
+        <li><a href="#features">Преимущества</a></li>
+        <li><a href="#services">Услуги</a></li>
+        <li><a href="#gallery">Наши работы</a></li>
+        <li><a href="#reviews">Отзывы</a></li>
+        <li><a href="#contact" class="btn-nav">Заявка</a></li>
+      </ul>
+    </div>
+  </nav>
+
   <!-- Hero -->
   <header class="hero">
     <div class="container">
@@ -23,7 +37,7 @@
   </header>
 
   <!-- Преимущества -->
-  <section class="features">
+  <section id="features" class="features">
     <div class="container">
       <h2>Почему выбирают нас</h2>
       <div class="grid">
@@ -48,7 +62,7 @@
   </section>
 
   <!-- Услуги -->
-  <section class="services">
+  <section id="services" class="services">
     <div class="container">
       <h2>Наши услуги</h2>
       <div class="grid">
@@ -95,11 +109,58 @@
     </div>
   </section>
 
+  <!-- Галерея -->
+  <section id="gallery" class="gallery">
+    <div class="container">
+      <h2>Наши работы</h2>
+      <div class="gallery-grid">
+        <div class="gallery-item" data-aos="zoom-in">
+          <img src="https://cdn.pixabay.com/photo/2017/08/07/22/52/demolition-2602326_960_720.jpg" alt="Демонтаж дома">
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="100">
+          <img src="https://cdn.pixabay.com/photo/2016/11/29/01/35/construction-1866886_960_720.jpg" alt="Разбор ангара">
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="200">
+          <img src="https://cdn.pixabay.com/photo/2017/01/18/17/30/construction-site-1990938_960_720.jpg" alt="Строительный мусор">
+        </div>
+        <div class="gallery-item" data-aos="zoom-in" data-aos-delay="300">
+          <img src="https://cdn.pixabay.com/photo/2016/06/27/07/52/demolition-1482743_960_720.jpg" alt="Техника на объекте">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Отзывы -->
+  <section id="reviews" class="reviews">
+    <div class="container">
+      <h2>Отзывы клиентов</h2>
+      <div class="reviews-grid">
+        <div class="review-card" data-aos="fade-up">
+          <p>«Разобрали старый гараж за один день! Мусор вывезли, участок оставили чистым. Цена как в смете — без сюрпризов.»</p>
+          <div class="review-author">— Игорь, Москва</div>
+        </div>
+        <div class="review-card" data-aos="fade-up" data-aos-delay="150">
+          <p>«Демонтировали цех на производстве. Работали аккуратно, соблюдали все нормы. Обязательно обращусь снова.»</p>
+          <div class="review-author">— ООО «СтройКомплект»</div>
+        </div>
+        <div class="review-card" data-aos="fade-up" data-aos-delay="300">
+          <p>«Спасибо за оперативность! Приехали на замер в тот же день, начали работу через два дня. Очень довольна.»</p>
+          <div class="review-author">— Анна, Подмосковье</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="container">
       <p>&copy; 2026 Демонтаж-Профи. Все права защищены.</p>
     </div>
   </footer>
+
+  <!-- Кнопка "Наверх" -->
+  <button id="scrollToTop" class="scroll-to-top" aria-label="Наверх">
+    ↑
+  </button>
 
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script src="script.js"></script>
